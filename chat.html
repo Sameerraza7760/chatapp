@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+    
+        <div class="user-list">
+            <div class="currentUser" >
+                <h1 id="username" ></h1>
+                <p id="useremail" ></p>
+            </div>
+            <h2>Users</h2>
+            <ul id="userList">
+                <!-- User list will be dynamically populated here -->
+            </ul>
+        </div>
+        <div class="chat-box">
+            <div class="currentUser" >
+                <h1 id="Selectusername" ></h1>
+                <p id="Selectuseremail" ></p>
+            </div>
+
+            <div class="messages" id="messages">
+              
+            </div>
+            <div class="input-box">
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <button onclick="Sendmessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+   
+ 
+    
+</body>
+</html>

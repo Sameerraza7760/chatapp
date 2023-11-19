@@ -1,0 +1,65 @@
+<!-- profile.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style2.css">
+
+   
+
+
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Profile Page</h1>
+    </header>
+
+    <section class="profile-container">
+        <div class="profile-info">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="User Avatar" class="avatar">
+            <div class="user-details">
+                <h1 id="username">John Doe</h1>
+                <p id="useremail">john@example.com</p>
+            </div>
+        </div>
+  
+
+        <div class="profile-actions">
+            <button onclick="openModal()">Update Profile</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+
+
+        
+    </section>
+
+
+<div class="btnmessege" >
+    <button id="messageButton" onclick="openMessaging()" >Send Message</button></div>         
+
+<div id="myModal" style="display: none;" >
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Update your Profile</h2>
+   
+            <label >Username:</label>
+            <input type="text" id="Ubdateusername" >
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="button" onclick="ubdateProfile()">Update Profile</button>
+   
+    </div>
+</div>
+
+    <script src="./app.js" type="module"></script>
+
+    
+</body>
+</html>
